@@ -10,8 +10,5 @@ class Model_Deals extends CI_Model
     function getDealById(){
 
     }
-    function getDealById(){
-        
-    }
 }
 ?>
