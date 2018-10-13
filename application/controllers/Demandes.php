@@ -14,7 +14,7 @@ class Demandes extends CI_Controller
 //var_dump($data);
         $this->load->view('header');
         $this->load->view('demandes', $data);
-        $this->load->view('footer');
+
 
     }
     public function user($iduser)
@@ -27,7 +27,7 @@ class Demandes extends CI_Controller
 //var_dump($data);
         $this->load->view('header');
         $this->load->view('demandes', $data);
-        $this->load->view('footer');
+
 
     }
 

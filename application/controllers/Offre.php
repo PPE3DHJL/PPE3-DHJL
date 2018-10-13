@@ -7,14 +7,14 @@ class Offre extends CI_Controller {
        $this->load->helper('url');
         $this->load->view('header');
         $this->load->view('offre');
-        $this->load->view('footer');
+
      
     }
     public function edit($id){
          $this->load->helper('url');
           $this->load->view('header');
           $this->load->view('forms/offre');
-          $this->load->view('footer');
+  
        
       }
 }

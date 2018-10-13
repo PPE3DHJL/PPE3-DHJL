@@ -7,7 +7,7 @@ class Demande extends CI_Controller {
        $this->load->helper('url');
         $this->load->view('header');
         $this->load->view('demandes');
-        $this->load->view('footer');
+
      
     }
     
@@ -15,7 +15,7 @@ class Demande extends CI_Controller {
         $this->load->helper('url');
          $this->load->view('header');
          $this->load->view('demandes');
-         $this->load->view('footer');
+
       
      }
 }
