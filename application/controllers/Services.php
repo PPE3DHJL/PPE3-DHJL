@@ -10,7 +10,6 @@ class Services extends CI_Controller {
        $data['services'] = $this->Model_Services->getServices();   
         $this->load->view('header');
         $this->load->view('services',$data);
-        $this->load->view('footer');
      
     }
     function view($id){
@@ -22,7 +21,7 @@ class Services extends CI_Controller {
         
         $this->load->view('header');
          $this->load->view('service',$data);
-         $this->load->view('footer');
+
 
     }
     function edit($id){
@@ -32,7 +31,7 @@ class Services extends CI_Controller {
         $data['service'] = $this->Model_Services->getServiceById($id);   
          $this->load->view('header');
          $this->load->view('forms/service',$data);
-         $this->load->view('footer');
+
 
     }
     // public function edit($id){

@@ -9,7 +9,6 @@ class Offres extends CI_Controller {
         $data['offres'] = $this->Model_Offres->getOffres();   
         $this->load->view('header');
         $this->load->view('offres',$data);
-        $this->load->view('footer');
      
     }
     public function edit($id){
@@ -19,7 +18,6 @@ class Offres extends CI_Controller {
         $this->load->helper('url');
         $this->load->view('header');
         $this->load->view('forms/offres',$data);
-        $this->load->view('footer');
        
       }
     public function create(){
@@ -31,7 +29,6 @@ class Offres extends CI_Controller {
         $data['typeEdition']='new';
         $this->load->view('header');
         $this->load->view('forms/offres',$data);
-        $this->load->view('footer');
        }
       
 }

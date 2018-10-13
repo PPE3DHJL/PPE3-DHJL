@@ -19,7 +19,6 @@ class Service extends CI_Controller {
     //      $this->load->helper('url');
     //       $this->load->view('header');
     //       $this->load->view('forms/services');
-    //       $this->load->view('footer');
        
     //   }
 }
