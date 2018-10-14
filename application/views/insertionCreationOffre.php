@@ -1,8 +1,6 @@
 <?php
-    foreach($numOffre as $unNumOffre)
-    {
+
     echo "Numero de l'offre' <input type='text' disable='true' id='numOffre' value='".$unNum->idOffre."'><br>";
-    }
     echo "Description de l'offre <input type='text' id='contenuOffre'><br>";
     echo "Date de l'offre  <input type='text' id='dateOffre'><br>";
     echo "Nom du service <select id='nomOffre'>";
