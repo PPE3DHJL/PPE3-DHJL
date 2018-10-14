@@ -90,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
 			<li><a href="<?php  echo site_url('offres');?>">Offres</a></li>
-			<li><a href="<?php  echo site_url('Services');?>">Service</a></li>
+			<li><a href="<?php  echo site_url('Services');?>">Services</a></li>
 		</ul>
 		<form class="navbar-form navbar-left" role="search">
 			<div class="form-group">
