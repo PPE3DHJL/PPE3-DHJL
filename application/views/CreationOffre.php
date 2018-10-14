@@ -1,11 +1,11 @@
 <?php
     foreach($numOffre as $unNumOffre)
     {
-    echo "Numero de l'offre' <input type='text' disable='true' id='numOffre' value='".$unNum->idOffre."'><br>";
+    echo "Numero de l'offre' <input type='text' disable='true' id='numOffre' value='".$unNumOffre->idOffre."'><br>";
     }
     echo "Description de l'offre <input type='text' id='contenuOffre'><br>";
     echo "Date de l'offre  <input type='text' id='dateOffre'><br>";
-    echo "Nom du service <select id='nomOffre'>";
+    echo "Nom du service <select id='nomService'>";
 
     foreach($description as $uneDescription)
     {
@@ -14,7 +14,7 @@
     echo "</select><br>";
 
     echo "Date de l'offre <select id='dateOffre'>";
-    foreach($dates as $uneDate)
+    foreach($dates as $uneDateOffre)
     {
         echo "<option value='".$uneDate->dateOffre."'>";
     }

@@ -1,7 +1,8 @@
 <?php
-    echo "Numero de l'offre' <input type='text' disable='true' id='numOffre' value='".$unNumOffre->idOffre."'><br>";
-    echo "Description de l'offre <input type='text' id='contenuOffre'><br>";
-    echo "Date de l'offre  <input type='text' id='dateOffre'><br>";
+
+    echo "Numero de la demande' <input type='text' disable='true' id='numDemande' value='".$unNumDemande->idDemande."'><br>";
+    echo "Description de la demande <input type='text' id='contenuDemande'><br>";
+    echo "Date de la demande  <input type='text' id='dateDemande'><br>";
     echo "Nom du service <select id='nomService'>";
 
     foreach($description as $uneDescription)
@@ -10,10 +11,10 @@
     }
     echo "</select><br>";
 
-    echo "Date de l'offre <select id='dateOffre'>";
-    foreach($dates as $uneDate)
+    echo "Date de la demande <select id='dateOffre'>";
+    foreach($dates as $uneDateDemande)
     {
-        echo "<option value='".$uneDateOffre->dateOffre."'>";
+        echo "<option value='".$uneDateDemande->dateDemande."'>";
     }
     echo "</select><br>";
 
@@ -25,7 +26,7 @@
     }
     echo"</select>";
 
-    echo "<input type='submit' value='Valider l'offre' id='ValiderOffre' onclick='ValiderOffre()'>";
+    echo "<input type='submit' value='Valider la demande' id='ValiderDemande' onclick='ValiderDemande()'>";
     echo "<input type='button' value='Retour à l'acceuil id='Acceuil' onclick='Acceuil()'>";
     echo "</select><br>";
 ?>
