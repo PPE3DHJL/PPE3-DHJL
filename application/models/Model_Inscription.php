@@ -11,8 +11,7 @@ class ModeleUtilisateur extends CI_Model{
     }
 
     function getById($id){
-         $limit=1;
-         $offset=0;
+        
          $requete = $this->db->get_where('users', array('id' => $id), $limit, $offset);
          return $this->db->query($requete )->result_array();
     }
