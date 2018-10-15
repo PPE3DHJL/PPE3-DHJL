@@ -17,7 +17,6 @@ class ModeleUtilisateur extends CI_Model{
          return $this->db->query($requete )->result_array();
     }
 
-    //--- Ajouter insert et update
 }
 
 ?>
