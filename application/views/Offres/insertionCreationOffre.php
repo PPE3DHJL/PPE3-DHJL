@@ -26,6 +26,6 @@
     echo"</select>";
 
     echo "<input type='submit' value='Valider l'offre' id='ValiderOffre' onclick='ValiderOffre()'>";
-    echo "<input type='button' value='Retour à l'acceuil id='Acceuil' onclick='Acceuil()'>";
+    echo "<input type='button' value='Retour à l'accueil id='Accueil' onclick='Accueil()'>";
     echo "</select><br>";
 ?>

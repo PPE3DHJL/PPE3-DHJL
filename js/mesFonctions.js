@@ -100,3 +100,6 @@ function insertionCreationDemande()
         }
     );
 }
+/*function Accueil(){
+    //retour à la page d'accueil
+}*/
