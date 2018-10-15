@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/SIO2/PPE3-DHJL/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------

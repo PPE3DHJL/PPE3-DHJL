@@ -76,9 +76,13 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
+	'username' => '',
 	'password' => '',
+<<<<<<< HEAD
 	'database' => 'trocdetemps',
+=======
+	'database' => '',
+>>>>>>> ca63f2b9cb55f6d2f0b172f1913e72bd0e4f5e23
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
