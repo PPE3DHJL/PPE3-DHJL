@@ -5,18 +5,17 @@ class Inscript extends CI_Controller
     public function inscription()
     {
 
+        $user=array(
+            'nomUser'=>$this->input->post('nomUser'),
+            'login'=>$this->input->post('login'),
+            'mdp'=>$this->input->post('mdp'),
+              );
 
-        if (isset($_POST['inscription'])) {
-            $this->form_validation_>set_rules('nom', 'prenom', 'required');
-            $this->form_validation_>set_rules('Identifiant', 'motdepasse', 'required');
-        }
-
-
+            }
         // Si l'inscription est correcte
-        if ($this->form_validation->run() == TRUE) {
+        
        
         }
-
         //base de donnée
         $data = array(
             'nom'=>$_POST['nomUser']
@@ -26,7 +25,9 @@ class Inscript extends CI_Controller
 
 
         //Chargement de la vue
-        $this->load->view('inscription'); 
-    }
+        $this->load->view('inscription');
+
+}
 }
 ?>
+   

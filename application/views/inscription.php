@@ -11,20 +11,18 @@
             <h2><center>Inscrivez-vous</center> </h2> 
          
                 <h5>Nom</h5>
-                <input type="text" class="form-control" name="nom"  value="Votre nom">
+                <input type="text" class="form-control" placeholder="Nom+prénom" name="nomUser"  value="Votre nom">
             
-                <h5>Prénom</h5>
-                <input type="text" class="form-control" name="prenom"  value="Votre prénom">
             
                 <h5>Identifiant</h5>
-                <input type="login" class="form-control" name="login"  value="Votre identifiant">
+                <input type="text" class="form-control" placeholder="login" name="login"  value="Votre identifiant">
             
                 <h5>Mot de passe</h5>
-                <input type="password" class="form-control" name="mdp" value="Votre mot de passe">
+                <input type="password" class="form-control" placeholder="Mot de passe" name="mdp" value="Votre mot de passe">
             
 
            
-        <button  id="submit" class="btn btn-primary">Inscription</button>
+                 <button  type="submit" value="Inscription" class="btn btn-primary" name="register" </button>
     
 
 
