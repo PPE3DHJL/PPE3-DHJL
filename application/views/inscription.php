@@ -1,30 +1,31 @@
-<<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page d'inscription</title>
-   
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Inscription</title>
+  </head>
+  <body>
 
-            <h2><center>Inscrivez-vous</center> </h2> 
-         
-                <h5>Nom</h5>
-                <input type="text" class="form-control" placeholder="Nom+prénom" name="nomUser"  value="Votre nom">
-            
-            
-                <h5>Identifiant</h5>
-                <input type="text" class="form-control" placeholder="login" name="login"  value="Votre identifiant">
-            
-                <h5>Mot de passe</h5>
-                <input type="password" class="form-control" placeholder="Mot de passe" name="mdp" value="Votre mot de passe">
-            
+                      <h3>Inscription</h3>
+                  </div>
+                      
+                    <br><br>
+                      <form role="form" method="post" action="<?php echo base_url('user/Inscription'); ?>">
+                              <div class="form-group">
+                                  <input class="form-control" placeholder="Nom + Prénom" name="nomUser" type="text">
+                              </div>
 
-           
-                 <button  type="submit" value="Inscription" class="btn btn-primary" name="register" </button>
-    
+                              <div class="form-group">
+                                  <input class="form-control" placeholder="Login" name="login" type="text">
+                              </div>
 
+                              <div class="form-group">
+                                  <input class="form-control" placeholder="Mot de passe" name="mdp" type="password">
+                              </div><br><br>
 
-</body>
+                              <input class="btn btn-lg btn-success btn-block" type="submit" value="Inscription" name="register" >
+                      </form><br>
+            
+                  </div>
+  </body>
 </html>

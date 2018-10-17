@@ -1,33 +1,30 @@
-<?php
+<?php 
 
-class Inscript extends CI_Controller
-{
-    public function inscription()
+class Inscript extends CI_Controller {
+    public function index()
     {
+        $this->load->view('Inscription');
+    }
 
-        $user=array(
-            'nomUser'=>$this->input->post('nomUser'),
-            'login'=>$this->input->post('login'),
-            'mdp'=>$this->input->post('mdp'),
-              );
+    public function Inscription(){
+      $user=array(
+        'nomUser'=>$this->input->post('nomUser'),
+        'mdp'=>$this->input->post('mdp'),
+        'login'=>$this->input->post('login'),
+          );
 
-            }
-        // Si l'inscription est correcte
+
+    $login_check=$this->user_model->login_check($user['login']);
+
+    if($login_check){
+        $this->user_model->model_inscription($user);
+        $this->session->set_flashdata('success_msg', 'Vous avez bien été enregistré!');
+      }
+      else{
         
-       
-        }
-        //base de donnée
-        $data = array(
-            'nom'=>$_POST['nomUser']
-        );
-
-        $this->db->insert('user',$data);
-
-
-        //Chargement de la vue
-        $this->load->view('inscription');
+      }
+}
 
 }
-}
+
 ?>
-   
