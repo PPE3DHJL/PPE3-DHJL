@@ -19,11 +19,12 @@ class Inscript extends CI_Controller {
     if($login_check){
         $this->user_model->model_inscription($user);
         $this->session->set_flashdata("Vous avez bien été enregistré!");
-        $this->load->view('Connexion');
+        redirect(ControleurConnexion/connexion);
       }
       else{
         $this->session->set_flashdata("Ce login est déjà pris. Veuillez-vous reconnecter s'il vous plaît.");
-        $this->load->view('inscription');
+        //$this->load->view('inscription');
+        redirect(Inscript/inscription);
       }
 }
 
