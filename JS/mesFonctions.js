@@ -1,4 +1,4 @@
-function connexion() {
+function login_User() {
     $.ajax({
         type: "POST",
         data: "login=" + $("input[name=login]").val() + "mdp=" + $("input[name=mdp]").val(),
