@@ -10,7 +10,7 @@
                   </div>
                       
                     <br><br>
-                      <form role="form" method="post" action="<?php echo base_url('Inscription'); ?>">
+                      
                               <div class="form-group">
                                   <input class="form-control" placeholder="Nom + Prénom" name="nomUser" type="text">
                               </div>
