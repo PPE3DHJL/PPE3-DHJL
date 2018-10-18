@@ -10,7 +10,6 @@
                   </div>
                       
                     <br><br>
-                      
                               <div class="form-group">
                                   <input class="form-control" placeholder="Nom + Prénom" name="nomUser" type="text">
                               </div>
