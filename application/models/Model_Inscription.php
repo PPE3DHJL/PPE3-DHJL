@@ -8,7 +8,7 @@ class ModeleUtilisateur extends CI_Model{
 
 
 
-    public function login_check($login){
+    public function verifconnection($login){
         $this->db->select('user');
         $this->db->from('user');
         $this->db->where('login',$login);
