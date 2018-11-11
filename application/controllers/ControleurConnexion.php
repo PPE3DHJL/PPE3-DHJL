@@ -2,6 +2,11 @@
 
 class ControleurConnexion extends CI_Controller
 {
+    public function index()
+    {
+        $this->load->view('Connexion');
+    }
+
     public function pageConnexion()
     {
         $this->load->view('header');
