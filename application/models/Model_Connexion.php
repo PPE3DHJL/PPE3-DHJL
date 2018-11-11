@@ -18,5 +18,22 @@ class Model_Connexion extends CI_Model
     
     
       }
+      public function inscription_user($user){
+    
+        $this->db->insert('user', $user);
+      }
+      public function validation_login($login){
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('login',$login);
+        $query=$this->db->get();
+      
+        if($query->num_rows()>0){
+          return false;
+        }else{
+          return true;
+        }
+      
+      }
 }
 ?>

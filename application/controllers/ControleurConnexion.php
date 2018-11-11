@@ -20,6 +20,11 @@ class ControleurConnexion extends CI_Controller
         $this->load->view('header');
         $this->load->view('Connexion');
     }
+    public function pageInscription()
+    {
+        $this->load->view('header');
+        $this->load->view('inscription');
+    }
 
      function login_User()
     {
@@ -34,5 +39,21 @@ class ControleurConnexion extends CI_Controller
         }
     
     }
+    public function inscription_User(){
+        $user=array(
+        'nomUser'=>$this->input->post('nomUser'),
+        'login'=>$this->input->post('login'),
+        'mdp'=>$this->input->post('mdp'),
+         );
+        $validation_login=$this->user_model->validation_login($user['login']);
+        if($validation_login){
+          $this->user_model->inscription_user($user);
+          redirect('user/Connexion');
+        }
+        else{
+          redirect('user/inscription');
+        }
+  }
+  
 }
 ?>
