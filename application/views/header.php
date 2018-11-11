@@ -13,10 +13,10 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('ControleurNavigation/Demandes') ?>">Mes Demandes</a>
+        <a class="nav-link" href="#">Mes Demandes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('ControleurNavigation/Offres') ?>">Mes Offres</a>
+        <a class="nav-link" href="#">Mes Offres</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Les Deals</a>
@@ -25,7 +25,7 @@
         <a class="nav-link" href="<?php echo site_url('ControleurConnexion/pageConnexion') ?>">Connexion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Inscription</a>
+        <a class="nav-link" href="<?php echo site_url('ControleurConnexion/pageInscription') ?>">Inscription</a>
       </li>
     </ul>
   </div>

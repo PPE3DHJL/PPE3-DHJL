@@ -5,10 +5,9 @@
     <title>Inscription</title>
   </head>
   <body>
-
+  <form role="form" method="post" action="<?php echo base_url('ControleurConnexion/inscription'); ?>">
                       <h3>Inscription</h3>
-                  </div>
-                      
+                  </div>   
                     <br><br>
                               <div class="form-group">
                                   <input class="form-control" placeholder="Nom + Prénom" name="nomUser" type="text">
@@ -24,7 +23,6 @@
 
                               <input class="btn btn-lg btn-success btn-block" type="submit" value="Inscription" name="register" >
                       </form><br>
-            
                   </div>
   </body>
 </html>
