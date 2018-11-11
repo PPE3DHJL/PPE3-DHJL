@@ -4,12 +4,17 @@ class ControleurConnexion extends CI_Controller
 {
     public function construct(){
 
-    parent::construct();
-        $this->load->helper('url');
-        $this->load->model('Model_Connexion');
-        $this->load->library('session');
-
-}
+        parent::construct();
+            $this->load->helper('url');
+            $this->load->model('Model_Connexion');
+            $this->load->library('session');
+    
+    }
+        
+	public function index()
+	{
+		$this->pageConnexion();
+	}
     public function pageConnexion()
     {
         $this->load->view('header');
