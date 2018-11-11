@@ -47,7 +47,7 @@ class ControleurConnexion extends CI_Controller
          );
         $validation_login=$this->user_model->validation_login($user['login']);
         if($validation_login){
-          $this->user_model->inscription_user($user);
+          $this->user_model->inscription_User($user);
           redirect('user/Connexion');
         }
         else{

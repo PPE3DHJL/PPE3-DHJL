@@ -18,7 +18,7 @@ class Model_Connexion extends CI_Model
     
     
       }
-      public function inscription_user($user){
+      public function inscription_User($user){
     
         $this->db->insert('user', $user);
       }
