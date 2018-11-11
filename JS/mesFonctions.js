@@ -1,7 +1,7 @@
-function connexion() {
+function login_User() {
     $.ajax({
         type: "POST",
-        data: "login=" + $("input[name=login]").val() + "&mdp=" + $("input[name=mdp]").val(),
+        data: "login=" + $("input[name=login]").val() + "mdp=" + $("input[name=mdp]").val(),
         success: function(data) {
             $("input[name=login]").val("");
             $("input[name=mdp]").val("");
@@ -9,8 +9,7 @@ function connexion() {
         error: function(data) {
             alert("Erreur: connexion");
         }
-    }
-    );
+    })
 }
 function CreationOffre()
 {
@@ -30,7 +29,7 @@ function CreationOffre()
                 alert("Erreur: Creation de l'offre");
             }
         }
-    );
+    )
 }
 function insertionCreationOffre()
 {
@@ -81,7 +80,7 @@ function CreationDemande()
                 alert("Erreur: Creation de la demande");
             }
         }
-    );
+    )
 }
 function insertionCreationDemande()
 {
