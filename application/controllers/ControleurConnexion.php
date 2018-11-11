@@ -1,29 +1,23 @@
 <?php
-
 class ControleurConnexion extends CI_Controller
 {
-<<<<<<< HEAD
-    public function index()
-    {
-        $this->load->view('Connexion');
-    }
-
-=======
     public function construct(){
-
-    parent::construct();
-        $this->load->helper('url');
-        $this->load->model('Model_Connexion');
-        $this->load->library('session');
-
-}
->>>>>>> 5c97ca0edbe715505c15e24c4af8d6eb9c2f8b3d
+        parent::construct();
+            $this->load->helper('url');
+            $this->load->model('Model_Connexion');
+            $this->load->library('session');
+    
+    }
+        
+	public function index()
+	{
+		$this->pageConnexion();
+	}
     public function pageConnexion()
     {
         $this->load->view('header');
         $this->load->view('Connexion');
     }
-
      function login_User()
     {
         $login=array( 'login'=>$this->input->post('login'), 'mdp'=>$this->input->post('mdp'));
