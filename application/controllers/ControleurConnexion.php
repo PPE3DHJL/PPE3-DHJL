@@ -31,5 +31,21 @@ class ControleurConnexion extends CI_Controller
         }
     
     }
+    public function inscription_User(){
+        $user=array(
+        'nomUser'=>$this->input->post('nomUser'),
+        'login'=>$this->input->post('login'),
+        'mdp'=>$this->input->post('mdp'),
+         );
+        $validation_login=$this->Model_Accueil->validation_login($user['login']);
+        if($validation_login){
+          $this->Model_Accueil->inscription_User($user);
+          redirect('user/Connexion');
+        }
+        else{
+          redirect('user/inscription');
+        }
+  }
+  
 }
 ?>

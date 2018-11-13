@@ -24,9 +24,6 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('ControleurConnexion/pageConnexion') ?>">Connexion</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Inscription</a>
-      </li>
     </ul>
   </div>
 </nav>
