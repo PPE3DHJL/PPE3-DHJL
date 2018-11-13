@@ -1,6 +1,8 @@
-
-<form role="form" method="post" action="<?php echo base_url('ControleurConnexion/login_User'); ?>">
+<form role="form" method="post" action="<?php echo base_url('ControleurConnexion/inscription_User'); ?>">
                         <fieldset>
+                        <div class="form-group">
+                                  <input class="form-control" placeholder="Nom + Prénom" name="nomUser" type="text">
+                              </div>
                             <div class="form-group"  >
                                 <input class="form-control" placeholder="Login" name="login" type="text" required autofocus>
                             </div>
@@ -9,7 +11,7 @@
                             </div><br><br>
 
 
-                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Connexion" name="connexion" >
+                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Inscription" name="inscription" >
 
                         </fieldset>
                     </form>
