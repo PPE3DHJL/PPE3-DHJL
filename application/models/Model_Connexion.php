@@ -44,8 +44,6 @@ class Model_Utilisateur extends CI_Model{
         $this->db->insert('user', $user);
         }
 
-
-
     public function verifconnection($login){
         $this->db->select('user');
         $this->db->from('user');
