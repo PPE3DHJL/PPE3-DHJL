@@ -45,9 +45,9 @@ class ControleurConnexion extends CI_Controller
         'login'=>$this->input->post('login'),
         'mdp'=>$this->input->post('mdp'),
          );
-        $validation_login=$this->user_model->validation_login($user['login']);
+        $validation_login=$this->Model_Accueil->validation_login($user['login']);
         if($validation_login){
-          $this->user_model->inscription_User($user);
+          $this->Model_Accueil->inscription_User($user);
           redirect('user/Connexion');
         }
         else{
