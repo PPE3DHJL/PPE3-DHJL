@@ -9,8 +9,6 @@
                             <div class="form-group">
                                 <input class="form-control" placeholder="Mot de passe" name="mdp" type="password" value="" >
                             </div><br><br>
-
-
                                 <input class="btn btn-lg btn-success btn-block" type="submit" value="Inscription" name="inscription" >
 
                         </fieldset>
